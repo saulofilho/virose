@@ -4,7 +4,7 @@ var slider2;
 var slider3;
 
 function setup() {
-    let canvas = createCanvas(800, 420);
+    let canvas = createCanvas(650, 600);
     canvas.parent('myContainer');
     colorMode(HSB);
     for(i=0; i<10; i++) blobs.push(new Blob(random(0, width), random(0, height)));
@@ -24,6 +24,10 @@ function setup() {
 //    slider3.position(900, 150);
 //    slider3.style('width', '300px');
 }
+
+function windowResized() {
+    resizeCanvas(450, 450);
+  }
 
 function draw() {
     background(255);

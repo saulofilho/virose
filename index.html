@@ -12,23 +12,31 @@
     <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
 </head>
 <body>
-    <h1>virose</h1>
-    <h2><a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot Set Experiment</a></h2>
 
-    <div id="text1">
-        <p>
-            1. Adjust the variables, and you will have something odd.
-            <br>
-            2. Click, clear the canvas, make another choice, and you will have something unusual again.
-            <br>
-            3. Let the math shine.
-        </p>
+<div id="grid">
+
+    <div class="gridItem" id="gridL">
+        <div id="myContainer"></div>
     </div>
 
-    <div id="myInputs"></div>
+    <div class="gridItem" id="gridR">
+        <h1>virose</h1>
+        <h2><a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot Set Experiment</a></h2>
+        <div id="text1">
+            <p>
+                1. Adjust the variables, and you will have something odd.
+                <br>
+                2. Click, clear the canvas, make another choice, and you will have something unusual again.
+                <br>
+                3. Let the math shine.
+            </p>
+            <div id="myInputs"></div>
+        </div>
+    </div>
 
-    <div id="myContainer"></div>
+</div>
 
+    
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
     <script type="text/javascript" src="sketch.js"></script>
