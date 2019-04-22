@@ -30,8 +30,6 @@ function windowResized() {
   }
 
 function draw() {
-    background(255);
-
     var val = slider.value();
     var val2 = slider2.value();
     var val3 = slider3.value();
@@ -55,5 +53,3 @@ function draw() {
         blobs[i].update();
     }
 }
-
-  
