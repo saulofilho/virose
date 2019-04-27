@@ -2,6 +2,7 @@ var blobs = []
 var slider;
 var slider2;
 var slider3;
+var mask;
 
 function setup() {
     let canvas = createCanvas(550, 600);
@@ -46,4 +47,5 @@ function draw() {
     for(i = 0; i < blobs.length; i++) {
         blobs[i].update();
     }
+
 }
