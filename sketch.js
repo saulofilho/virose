@@ -5,7 +5,7 @@ var slider3;
 var mask;
 
 function setup() {
-    let canvas = createCanvas(550, 600);
+    let canvas = createCanvas(400, 400);
     canvas.parent('myContainer');
     colorMode(HSB);
     for(i = 0; i < 10; i++) blobs.push(new Blob(random(0, width), random(0, height)));
@@ -19,10 +19,6 @@ function setup() {
     slider3.parent('myInputs');
     slider3.class('inputs');
 }
-
-function windowResized() {
-    resizeCanvas(450, 450);
-  }
 
 function draw() {
     var val = slider.value();
@@ -49,3 +45,9 @@ function draw() {
     }
 
 }
+
+$(document).ready(function() {
+    $("button").click(function() {
+      $("span").toggle();
+    })
+  })
